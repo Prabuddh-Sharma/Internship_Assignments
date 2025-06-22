@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.ipynb_checkpoints/ # Jupyter Notebook checkpoints
+
+# IDEs and Editors
+.idea/		# Pycharm project files
+.vscode/	# VS Code files (if I ever use it)
+*.iml		# IntelliJ IDEA files
+.DS_Store	# macOS specific files
+
+# Virtual environments
+venv/
+env/
+.env/
