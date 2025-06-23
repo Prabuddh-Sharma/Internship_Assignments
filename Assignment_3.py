@@ -12,7 +12,7 @@ def cal():
     print(f"Subtraction: {n1} - {n2} = {n1 - n2}")
     print(f"Multiplication: {n1} * {n2} = {n1 * n2}")
 
-    if num2 == 0:
+    if n2 == 0:
         print(f"Division: {n1} / {n2} Error")
     else:
         print(f"Division: {n1} / {n2} = {n1 / n2}")
