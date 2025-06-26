@@ -1,0 +1,28 @@
+Q1. Explain how missing values are handled in the resulting data frame. 
+Ans 1.  
+(A) Left Join ->
+
+i) Keeps all rows from the left DataFrame.
+ii) If a row from the left DataFrame has no match in the right, columns from the right DataFrame will have NaN.
+
+(B) Right Join ->
+
+i) Keeps all rows from the right DataFrame.
+ii) If a row from the right DataFrame has no match in the left, columns from the left DataFrame will have NaN.
+
+(C) Index-Based Join ->
+
+i) Uses the DataFrame row labels for merging.
+ii) Inner: Only includes rows where indices match in both DataFrames. No NaN from unmatched keys.
+iii) Left/Right/Outer: Follows the same NaN rules as regular column-based joins, but based on matching indices.
+
+Q2. Explain the primary differences between df.join() and pd.merge().
+Ans 2. Differences are ->
+
+I. df.join() : The Default Join Key -> DataFrame Index
+	       Usage		    -> DataFrame method (called on a DataFrame)
+	       Joining on Index     -> Default behavior, 'on' is for columns
+
+II. pd.merge() : The Default Join Key -> Common Columns or specified 'on' argument
+		 Usage		      -> Pandas function
+		 Joining on Index     -> Use 'left_index=True', 'right_index=True'
